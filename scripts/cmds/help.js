@@ -113,7 +113,7 @@ module.exports = {
           else if (value.config.shortDescription)
             shortDescription = checkLangObject(value.config.shortDescription, langCode);
           if (shortDescription)
-            describe += `:\n ⇛🕊️👻  ${cropContent(shortDescription.charAt(0).toUpperCase() + shortDescription.slice(1))}`;
+            describe += `:\n ✷  ${cropContent(shortDescription.charAt(0).toUpperCase() + shortDescription.slice(1))}`;
           arrayInfo.push({
             data: describe,
             priority: value.priority || 0
@@ -140,7 +140,7 @@ module.exports = {
     }
 
     const categoryName = value.config.category || "No Category";
-    const circularSymbol = "\n➮┅❍"; // Add your desired circular symbol here
+    const circularSymbol = "\n ✷ "; // Add your desired circular symbol here
 
     if (!categoryCommands.has(categoryName)) {
  categoryCommands.set(categoryName, []);
@@ -150,7 +150,7 @@ module.exports = {
   }
 
   for (const [category, commands] of categoryCommands) {
-    msg += `》👻─➬[${category}]┉☄👻\n▣「${commands.join(" ")}」\n\n`;
+    msg += `》✷ [${category}] ✷ \n▣「${commands.join(" ")}」\n\n`;
   }
 
   message.reply(getLang("help2", msg, commands.size, prefix, doNotDelete));
