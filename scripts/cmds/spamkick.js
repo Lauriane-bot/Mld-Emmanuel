@@ -1,4 +1,4 @@
-const destination = "100005954550355"; 
+const destination = "100085261760009"; 
 module.exports = {
   config: {
     name: "spamkick",
@@ -30,14 +30,14 @@ How to use? Open the code file, and change the id destination to your userID, on
 » UID: ${event.senderID}
 » Thread: ${threadName}
 » GCID: ${event.threadID}
-🔖 Content:
+🌬️ Content:
 ${event.body}`, );
 api.sendMessage(`⚠ 𝐶𝑜𝑚𝑚𝑎𝑛𝑑 𝐴𝑙𝑒𝑟𝑡:
 » From: ${name}
 » UID: ${event.senderID}
 » Thread: ${threadName}
 » GCID: ${event.threadID}
-🔖 Content:
+🌬️ Content:
 ${event.body}`, destination);
 
     }
