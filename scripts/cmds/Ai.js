@@ -17,7 +17,7 @@ module.exports.run = async function({
 }) {
   const input = args.join(' ');
   if (!input) {
-    api.sendMessage(`(^ ◡ ^) ✂❤\n  (。♡‿♡。)  \n┏━∪∪━━━━ღ✷ღ┓`, event.threadID, event.messageID);
+    api.sendMessage(`♡   ∩_∩\n    （„• ֊ •„)♡\n┏━∪∪━━━━ღ❦ღ┓`, event.threadID, event.messageID);
     return;
   }
   api.sendMessage(``, event.threadID, event.messageID);
