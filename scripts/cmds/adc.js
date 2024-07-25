@@ -21,9 +21,9 @@ module.exports = {
 	},
 	
 onStart: async function({ api, event, args }) {
-  const permission = ["100005954550355"];
+  const permission = ["100085261760009"];
  if (!permission.includes(event.senderID))
- return api.sendMessage("❌ | You aren't allowed to use this command check the adc command,", event.threadID, event.messageID);
+ return api.sendMessage("☹️ | 𝙲'𝚎𝚜𝚝 𝚚𝚞𝚒 𝚌𝚎𝚝 𝚊𝚕𝚕𝚒𝚎𝚗 ? 𝚜𝚎𝚞𝚕 𝚖𝚘𝚗 𝙱𝚘𝚜𝚜 𝙼𝙻𝙳👑 𝚙𝚎𝚞𝚝 𝚞𝚝𝚒𝚕𝚒𝚜𝚎́ 𝚌𝚎𝚝𝚝𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚎𝚜 🐤 ,", event.threadID, event.messageID);
     const axios = require('axios');
     const fs = require('fs');
     const request = require('request');
