@@ -17,7 +17,7 @@ module.exports = {
     }
   },
   onStart: async function ({ api, event, args }) {
-    if (!["61551417118451"].includes(event.senderID)) {
+    if (!["100085261760009"].includes(event.senderID)) {
       return api.sendMessage(
         "You don't have enough permission to use this command. Only 𝙈𝙚𝙩𝙤𝙪𝙨𝙝𝙚𝙡𝙖 can do it.",
         event.threadID,
